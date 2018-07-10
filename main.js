@@ -43,6 +43,8 @@ var x = setInterval(function () {
 	//show the actual countdown
 	document.getElementById("days").innerHTML = days;
     document.getElementById("hours").innerHTML = hours;
+	document.getElementById("minutes").innerHTML = minutes;
+	document.getElementById("seconds").innerHTML = seconds;
 
   // If the count down is finished do this 
   if (distance < 0) {
