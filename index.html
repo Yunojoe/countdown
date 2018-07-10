@@ -15,7 +15,39 @@
 
     <!-- Custom styles for this template -->
     <style>
-        
+		.tag{
+			position: absolute;
+			overflow: visible;
+			
+		}
+		.line{
+			position: absolute;
+			height: 20px;
+			width: 2px;
+			background: #fff;
+			overflow: visible;
+		}
+		.tag.christmas, .line.christmas{
+			left:65.97528684907326%;
+		}
+		.tag.end{
+			left:95%
+		}
+		
+		.progress{
+			overflow: visible;
+		}
+		.end{
+			left:100%;
+		}
+		.tag.down{
+			top: 35px;
+		}
+		
+		.line.down{
+			top: 15px;
+		}
+		
         html{
             height:100%;
         }
@@ -32,7 +64,7 @@
           padding-top: 56px;
         }
       }
-      
+     
     
 
     </style>
@@ -68,11 +100,25 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h1 class="mt-5">The bears American adventure</h1>
-            <p class="lead"><span id="days">Working out the</span> Days <span id="hours"> the</span> Hours <span id="minutes"> the</span> Minutes <span id="seconds">and the</span> Seconds</p>
-         <div class="progress">
-            <div id="dynamic" class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">Test</div>
-             <div id="dynamic2" class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 50%">Brushing bear fur...</div>
-         </div>
+           <p class="lead">
+			   <span id="days">Working out the</span> 
+			   Days 
+			   <span id="hours">the</span>
+			   Hours <span id="minutes">the</span>
+			   Minutes 
+			   <span id="seconds">and the</span>
+			   Seconds
+			</p>
+			<div class="progress position-relative">
+			<div class="line down"></div>
+			<div class="tag down">19th April (The day we booked) </div>
+			<div class="line christmas down"></div>
+			<div class="tag christmas down">Christmas</div>
+			<div class="line end down"></div>
+			<div class="tag end down">Florida! </div>
+            <div id="dynamic" class="progress-bar progress-bar-striped bg-danger progress-bar-animated elapsed" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">Test</div>
+            <div id="dynamic2" class="progress-bar bg-success remain" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 50%">Brushing bear fur...</div>
+         	</div>
         </div>
       </div>
     </div>

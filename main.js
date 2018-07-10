@@ -1,6 +1,10 @@
 // var originalDate = new Date("April 19, 2018, 21:00:00").getTime();
 var countDownDate = new Date("May 2, 2019 13:00:00").getTime();
+var christmas = 11102400000;
 var StartDistance = 32630400000;
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -9,7 +13,7 @@ var x = setInterval(function () {
   // Find the distance between now an the count down date
     var distance = countDownDate - now;
     var elapsed = StartDistance - distance; 
-    var Progress = (100 * elapsed) / (StartDistance); 
+    var Progress = (100 * elapsed) / (StartDistance);
 	
   // Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
