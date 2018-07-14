@@ -30,28 +30,6 @@
 		.tag.christmas, .line.christmas{
 			left:65.97528684907326%;
 		}
-		
-		.tag.kitten, .line.kitten{
-			left:24.13945278022948%;
-		}
-		
-		
-		.jill{
-			left:29.964695498676083%;
-		}
-		
-		.halloween{
-			left: 51.41218005295675%;
-		}
-		
-		.bonfire{
-			left: 52.73609885260371%;
-		}
-		
-		.chols{
-			left: 63.062665489849955%;
-		}
-		
 		.tag.end{
 			left:95%
 		}
@@ -68,14 +46,6 @@
 		
 		.line.down{
 			top: 15px;
-		}
-		
-		.tag.up{
-			top:-40px;
-		}
-		
-		.line.up{
-			top:-20px;
 		}
 		
         html{
@@ -129,43 +99,14 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h1 class="mt-5">The bears American adventure</h1>
-           <p class="lead">
-			   <span id="days">Working out the</span> 
-			   Days 
-			   <span id="hours">the</span>
-			   Hours <span id="minutes">the</span>
-			   Minutes 
-			   <span id="seconds">and the</span>
-			   Seconds
-			</p>
-			<div class=" mt-5 progress position-relative">
-			<div class="line down start"></div>
-			<div class="tag down start">19th April (The day we booked) </div>
+			<div>
+			<form  onsubmit="return false;" >
+  				Date: <input id="calc" type="date" name="fname"><br>
+  				<input type="submit" onclick="getdate123()"  value="calculate">
+			</form>
 			
-			<div class="line down kitten"></div>
-				<div class="tag down kitten">Kitten<br> Arrives</div>
-				
-			<div class="line down jill"></div>
-			<div class="tag down jill">Mum to <br>Jill and Roberts</div>
-				
-			<div class="line down halloween"></div>
-			<div class="tag down halloween">Halloween</div>
-				
-			<div class="line up bonfire"></div>
-			<div class="tag up bonfire">Bonfire <br> Night</div>
-				
-			<div class="line down chols"></div>
-			<div class="tag down chols">Christmas<br> Holidays</div>
-				
-				
-			<div class="line christmas up"></div>
-			<div class="tag christmas up">Christmas</div>
-			<div class="line end down"></div>
-			<div class="tag end down">Florida! </div>
-            <div id="dynamic" class="progress-bar progress-bar-striped bg-danger progress-bar-animated elapsed" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">Test</div>
-            <div id="dynamic2" class="progress-bar bg-success remain" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 50%">Brushing bear fur...</div>
-         	</div>
+			
+			</div>
         </div>
       </div>
     </div>
@@ -181,7 +122,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="calc.js"></script>
   </body>
 
 </html>
