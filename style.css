@@ -18,7 +18,8 @@ body{
 	position: absolute;
 	overflow: visible;
 	text-align: left;
-    width: 100px
+    width: 100px;
+    font-size: 14px;
 }
 .line {
 	position: absolute;
@@ -42,7 +43,7 @@ body{
 	top: 0px;
 }
 .vleft {
-	right: 50px;
+	right: 65px;
 }
 
 .vright{
