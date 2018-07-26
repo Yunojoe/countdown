@@ -45,8 +45,10 @@ var x = setInterval(function () {
   // Display the results
 	// to go bar
 	document.getElementById("dynamic2").innerHTML = days + " days " + hours + " hours to go";
+    document.getElementById("dynamic").innerHTML = elapsed_days + " days down";
+    document.getElementById("vert-text2").innerHTML = days + " days " + hours + " hours to go";
 	//elapsed bar
-	document.getElementById("dynamic").innerHTML = elapsed_days + " days down";
+	document.getElementById("vert-text").innerHTML = elapsed_days + " days down";
 	
 	//change settings of bar 1 (elapsed)
 	$("#dynamic")
@@ -56,6 +58,14 @@ var x = setInterval(function () {
 	//change settings of bar 2 (remaining)
 	$("#dynamic2")
       .css("width", (100 - Progress) + "%")
+      .attr("aria-valuenow", (100 - Progress))
+    
+    $("#vert")
+      .css("height", (Progress) + "%")
+      .attr("aria-valuenow", (100 - Progress))
+    
+    $("#vert2")
+      .css("height", (100 - Progress) + "%")
       .attr("aria-valuenow", (100 - Progress))
 	
 	//show the actual countdown
