@@ -1,0 +1,15 @@
+{
+  "name": "The Bears American Adventure",
+  "short_name": "🐻's Florida",
+  "display": "minimal-ui",
+  "start_url": "/",
+  "theme_color": "#5af5fa",
+  "background_color": "#432468",
+  "icons": [
+    {
+      "src": "bearlogo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
