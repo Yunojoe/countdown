@@ -74,6 +74,6 @@ var x = setInterval(function () {
   // If the count down is finished do this 
   if (distance < 0) {
 	  clearInterval(x);
-	  document.getElementById("vert-text").innerHTML = "There's a great big beautiful tomorrow";
+	  document.getElementById("event-text").innerHTML = "There's a great big beautiful tomorrow";
   }
 }, 1000);
