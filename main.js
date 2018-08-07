@@ -3,7 +3,7 @@ var countDownDate = new Date("May 2, 2019 13:00:00").getTime();
 var christmas = 11102400000;
 var StartDistance = 32630400000;
 
-var nextevent = new Date("July 31, 2018 08:10:00").getTime();
+var nextevent = new Date("Oct 31, 2018 00:00:00").getTime();
 
 // get distance between the date and start distance
 // get the percentage 
