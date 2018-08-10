@@ -78,7 +78,7 @@ var x = setInterval(function () {
   }
 }, 1000);
 
-$.getJSON('/events.json', function(data) {
+$.getJSON('events.json', function(data) {
   console.log(data);
 });
 
