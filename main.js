@@ -6,7 +6,7 @@ var StartDistance = 32630400000;
 var nextevent = new Date("Oct 31, 2018 00:00:00").getTime();
 
 // get distance between the date and start distance
-// get the percentage 
+// get the percentage
 // make it a width
 $(function () {
   $('[data-toggle="popover"]').popover()
@@ -18,24 +18,24 @@ var x = setInterval(function () {
 	var now = new Date().getTime();
   // Find the distance between now an the count down date
     var distance = countDownDate - now;
-    var elapsed = StartDistance - distance; 
+    var elapsed = StartDistance - distance;
     var Progress = (100 * elapsed) / (StartDistance);
-	
+
 	var event = nextevent - now;
-	
+
   // Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
+
 // Time calculations for days, hours, minutes and seconds
 	var elapsed_days = Math.floor(elapsed/ (1000 * 60 * 60 * 24));
 	var elapsed_hours = Math.floor((elapsed % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 	var elapsed_minutes = Math.floor((elapsed % (1000 * 60 * 60)) / (1000 * 60));
 	var elapsed_seconds = Math.floor((elapsed % (1000 * 60)) / 1000);
-	
-	
+
+
 	var event_days = Math.floor(event/ (1000 * 60 * 60 * 24));
 	var event_hours = Math.floor((event % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 	var event_minutes = Math.floor((event % (1000 * 60 * 60)) / (1000 * 60));
@@ -44,36 +44,46 @@ var x = setInterval(function () {
 
   // Display the results
 	// to go bar
-	
+
     document.getElementById("vert-text2").innerHTML = days + " days " + hours + " hours to go";
 	//elapsed bar
 	document.getElementById("vert-text").innerHTML = elapsed_days + " days down";
-	
+
 	//change settings of bar 1 (elapsed)
-    
+
     $("#vert")
       .css("height", (Progress) + "%")
       .attr("aria-valuenow", (100 - Progress))
-    
+
     $("#vert2")
       .css("height", (100 - Progress) + "%")
       .attr("aria-valuenow", (100 - Progress))
-	
+
 	//show the actual countdown
 	document.getElementById("days").innerHTML = days;
     document.getElementById("hours").innerHTML = hours;
 	document.getElementById("minutes").innerHTML = minutes;
 	document.getElementById("seconds").innerHTML = seconds;
-	
+
 	document.getElementById("event_days").innerHTML = event_days;
     document.getElementById("event_hours").innerHTML = event_hours;
 	document.getElementById("event_minutes").innerHTML = event_minutes;
 	document.getElementById("event_seconds").innerHTML = event_seconds;
-	
 
-  // If the count down is finished do this 
+
+  // If the count down is finished do this
   if (distance < 0) {
 	  clearInterval(x);
 	  document.getElementById("event-text").innerHTML = "There's a great big beautiful tomorrow";
   }
 }, 1000);
+
+$.getJSON('events.json', function(data) {
+  console.log(data);
+});
+
+// Add the markers on the bar to show event_seconds
+//var allEvents = {object here};
+//for (x in allEvents) {
+    //document.getElementById("event-holder").innerHTML += allEvents[x] + "<br>";
+//}
