@@ -1,48 +1,52 @@
 {
-  "name": {"The day we booked"},
-  "date": {0}
-}
+"events":[
 {
-  "name": {"Kitten arrives"},
-  "date": {24.40423654015887}
-}
+  "name": "The day we booked",
+  "date": 0
+},
 {
-  "name": {"Joe's Laser Eye"},
-  "date": {27.05207413945278}
-}
+  "name": "Kitten arrives",
+  "date": 24.40423654015887
+},
 {
-  "name": {"Mum coffee with Jill and Robert"},
-  "date": {29.964695498676083}
-}
+  "name": "Joe's Laser Eye",
+  "date": 27.05207413945278
+},
 {
-  "name": {"Halloween"},
-  "date": {51.41218005295675}
-}
+  "name": "Mum coffee with Jill and Robert",
+  "date": 29.964695498676083
+},
 {
-  "name": {"Bonfire Night"},
-  "date": {52.73609885260371}
-}
+  "name": "Halloween",
+  "date": 51.41218005295675
+},
 {
-  "name": {"Christmas Holidays"},
-  "date": {63.062665489849955}
-}
+  "name": "Bonfire Night",
+  "date": 52.73609885260371
+},
 {
-  "name": {"Christmas"},
-  "date": {65.97528684907326}
-}
+  "name": "Christmas Holidays",
+  "date": 63.062665489849955
+},
 {
-  "name": {"Kate Birthday"},
-  "date": {88.2171226831421}
-}
+  "name": "Christmas",
+  "date": 65.97528684907326
+},
 {
-  "name": {"Amy Birthday"},
-  "date": {90.07060900264784}
-}
+  "name": "Kate Birthday",
+  "date": 88.2171226831421
+},
 {
-  "name": {"Florida!"},
-  "date": {100}
-}
+  "name": "Amy Birthday",
+  "date": 90.07060900264784
+},
 {
-  "name": {"Adam Graduation"},
-  "date": {51.67696381288614}
+  "name": "Florida!",
+  "date": 100
+},
+{
+  "name": "Adam Graduation",
+  "date": 51.67696381288614
+}
+    ]
 }

@@ -78,13 +78,5 @@ var x = setInterval(function () {
   }
 }, 1000);
 
-$.getJSON("https://upbeat-bear-2019.netlify.com/events.json", function(json) {
-  console.log(json);
-});
-
-
-// Add the markers on the bar to show event_seconds
-//var allEvents = {object here};
-//for (x in allEvents) {
-    //document.getElementById("event-holder").innerHTML += allEvents[x] + "<br>";
-//}
+$.getJSON("events.json", function(json){
+  console.log(json);});
