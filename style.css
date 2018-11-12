@@ -195,7 +195,7 @@ html {
 	transform: rotate(90deg);
 }
 .bar-bg-glow {
-	background-color: purple !important;
+	background-color: #ff6007 !important;
 }
 
 @media (min-width: 992px) {
