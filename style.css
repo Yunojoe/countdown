@@ -194,6 +194,11 @@ html {
 .vertical-text {
 	transform: rotate(90deg);
 }
+
+.progress-bar{
+    background-color: #696969 !important;
+}
+
 .bar-bg-glow {
 	background-color: #ff6007 !important;
 }
