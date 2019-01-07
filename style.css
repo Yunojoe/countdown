@@ -6,6 +6,7 @@ body{
     background-blend-mode: multiply;
 	background-repeat: no-repeat;
 	background-size: cover;
+	    background-position: center;
 	height: 100%;
 	color: aliceblue;
 	will-change: opacity;
