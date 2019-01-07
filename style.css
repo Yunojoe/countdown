@@ -201,6 +201,10 @@ html {
 	transform: rotate(90deg);
 }
 
+#vert-text2{
+	margin-top: -100px;
+}
+
 .progress-bar{
     background-color: #696969 !important;
 }
