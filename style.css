@@ -20,6 +20,7 @@ body{
 	position: absolute;
 	overflow: visible;
 	text-align: left;
+	text-shadow: 2px 2px 6px #000000;
 }
 .vtag {
 	position: absolute;
@@ -27,7 +28,8 @@ body{
     margin-top:-10px;
 	text-align: left;
     width: 130px;
-    font-size: 14px;
+	font-size: 14px;
+	text-shadow: 2px 2px 6px #000000;
 }
 .line {
 	position: absolute;
