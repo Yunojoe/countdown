@@ -1,9 +1,9 @@
 html{
-	background: #00021e;
+	background: #795cda;
 }
 body{
     padding-top:50px;
-    background: #041933c4;  /* fallback for old browsers */
+    background: #f3fcff61;  /* fallback for old browsers */
     background-image: url(img/final.png);
     background-blend-mode: multiply;
 	background-repeat: no-repeat;
@@ -213,7 +213,7 @@ html {
 }
 
 .bar-bg-glow {
-	background-color: #7207ff !important;
+	background-color: #ff5707 !important;
 }
 
 @media (min-width: 992px) {
