@@ -1,5 +1,6 @@
 html{
 	background: #795cda;
+	overflow: auto;
 }
 body{
     padding-top:50px;
@@ -12,6 +13,7 @@ body{
 	height: 100%;
 	color: aliceblue;
 	will-change: opacity;
+	overflow: auto;
 }
 
 .tag {
