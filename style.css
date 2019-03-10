@@ -4,7 +4,7 @@ html{
 }
 body{
     padding-top:50px;
-    background: #f3fcff61;  /* fallback for old browsers */
+    background: #1b1b1b61;  /* fallback for old browsers */
     background-image: url(img/final.png);
     background-blend-mode: multiply;
 	background-repeat: no-repeat;
